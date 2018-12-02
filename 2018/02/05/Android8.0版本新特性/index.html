@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="jQuery,表格,表单验证,">
+  <meta name="keywords" content="Android8.0,API适配,">
 
 
 
@@ -79,15 +79,18 @@
 
 
 
-<meta name="keywords" content="jQuery,表格,表单验证">
+<meta name="description" content="Android8.0 手机系统新增自动记忆输入框的邮箱地址与密码的功能(当你点击记录密码后,会弹出选择密码的item弹框) 所以其他EditText的id需要与此类型的EditText的id不能一致,否则会默认弹出系统的密码框   Android8.1 String.getBytes(“Unicode”)(针对Google手机8.1系统)   在版本8.1之前，返回的byte[] 是低位在前，高位">
+<meta name="keywords" content="Android8.0,API适配">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test_my_site">
-<meta property="og:url" content="http://litchiny.github.io/2018/12/02/test-my-site/index.html">
+<meta property="og:title" content="Android8.0版本新特性">
+<meta property="og:url" content="http://litchiny.github.io/2018/02/05/Android8.0版本新特性/index.html">
 <meta property="og:site_name" content="Litchiny&#39;s Blog">
+<meta property="og:description" content="Android8.0 手机系统新增自动记忆输入框的邮箱地址与密码的功能(当你点击记录密码后,会弹出选择密码的item弹框) 所以其他EditText的id需要与此类型的EditText的id不能一致,否则会默认弹出系统的密码框   Android8.1 String.getBytes(“Unicode”)(针对Google手机8.1系统)   在版本8.1之前，返回的byte[] 是低位在前，高位">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-02T05:47:25.404Z">
+<meta property="og:updated_time" content="2018-12-02T05:48:59.325Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test_my_site">
+<meta name="twitter:title" content="Android8.0版本新特性">
+<meta name="twitter:description" content="Android8.0 手机系统新增自动记忆输入框的邮箱地址与密码的功能(当你点击记录密码后,会弹出选择密码的item弹框) 所以其他EditText的id需要与此类型的EditText的id不能一致,否则会默认弹出系统的密码框   Android8.1 String.getBytes(“Unicode”)(针对Google手机8.1系统)   在版本8.1之前，返回的byte[] 是低位在前，高位">
 
 
 
@@ -117,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://litchiny.github.io/2018/12/02/test-my-site/">
+  <link rel="canonical" href="http://litchiny.github.io/2018/02/05/Android8.0版本新特性/">
 
 
 
 
 
-  <title>test_my_site | Litchiny's Blog</title>
+  <title>Android8.0版本新特性 | Litchiny's Blog</title>
   
 
 
@@ -293,7 +296,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://litchiny.github.io/2018/12/02/test-my-site/">
+    <link itemprop="mainEntityOfPage" href="http://litchiny.github.io/2018/02/05/Android8.0版本新特性/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Litchiny">
@@ -310,7 +313,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">test_my_site</h1>
+          <h1 class="post-title" itemprop="name headline">Android8.0版本新特性</h1>
         
 
         <div class="post-meta">
@@ -322,8 +325,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-02T12:56:26+08:00">
-                2018-12-02
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-05T20:44:38+08:00">
+                2018-02-05
               </time>
             
 
@@ -360,7 +363,31 @@
       
 
       
-        
+        <h4 id="Android8-0"><a href="#Android8-0" class="headerlink" title="Android8.0"></a>Android8.0</h4><ol>
+<li><p>手机系统新增自动记忆输入框的邮箱地址与密码的功能(当你点击记录密码后,会弹出选择密码的item弹框)</p>
+<p>所以其他EditText的id需要与此类型的EditText的id不能一致,否则会默认弹出系统的密码框</p>
+</li>
+</ol>
+<h4 id="Android8-1"><a href="#Android8-1" class="headerlink" title="Android8.1"></a>Android8.1</h4><ol>
+<li><p>String.getBytes(“Unicode”)(针对Google手机8.1系统)</p>
+<p>  在版本8.1之前，返回的byte[] 是低位在前，高位在后，8.1后直接变成了高位在前，低    位在后</p>
+<p>​    解决办法：</p>
+<p>  改成String.getBytes(“UnicodeLittleUnmarked”)</p>
+<p>  注意：</p>
+<p>  原来的getBytes(“Unicode”)默认前两个字节分别是-2，-1.</p>
+<p>  而getBytes(“UnicodeLittleUnmarked”)去除了这两个字节。</p>
+</li>
+</ol>
+<ol start="2">
+<li>用户在通知管理里找到应用,并打开channel one,否则应用的通知栏无法正常使用</li>
+</ol>
+<h4 id="Android9-0"><a href="#Android9-0" class="headerlink" title="Android9.0"></a>Android9.0</h4><ol>
+<li><p>当应用使用了前台服务时, 清单配置文件需要增加一条新的权限</p>
+<p>   uses-permission android:name=”android.permission.FOREGROUND_SERVICE”</p>
+<p>   否则程序无法正常安装</p>
+</li>
+</ol>
+
       
     </div>
     
@@ -377,11 +404,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/jQuery/" rel="tag"># jQuery</a>
+            <a href="/tags/Android8-0/" rel="tag"># Android8.0</a>
           
-            <a href="/tags/表格/" rel="tag"># 表格</a>
-          
-            <a href="/tags/表单验证/" rel="tag"># 表单验证</a>
+            <a href="/tags/API适配/" rel="tag"># API适配</a>
           
         </div>
       
@@ -394,8 +419,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/02/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/01/28/Sqlite数据库多表联合查询/" rel="next" title="Sqlite数据库多表联合查询">
+                <i class="fa fa-chevron-left"></i> Sqlite数据库多表联合查询
               </a>
             
           </div>
@@ -403,6 +428,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/12/02/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -454,8 +483,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -533,6 +571,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Android8-0"><span class="nav-number">1.</span> <span class="nav-text">Android8.0</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Android8-1"><span class="nav-number">2.</span> <span class="nav-text">Android8.1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Android9-0"><span class="nav-number">3.</span> <span class="nav-text">Android9.0</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

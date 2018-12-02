@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title>test_my_site</title>
+      <link href="/2018/12/02/test-my-site/"/>
+      <url>/2018/12/02/test-my-site/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> jQuery </tag>
+            
+            <tag> 表格 </tag>
+            
+            <tag> 表单验证 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2018/12/02/hello-world/"/>
+      <url>/2018/12/02/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> jQuery </tag>
+            
+            <tag> 表格 </tag>
+            
+            <tag> 表单验证 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Android8.0版本新特性</title>
+      <link href="/2018/02/05/Android8.0%E7%89%88%E6%9C%AC%E6%96%B0%E7%89%B9%E6%80%A7/"/>
+      <url>/2018/02/05/Android8.0%E7%89%88%E6%9C%AC%E6%96%B0%E7%89%B9%E6%80%A7/</url>
+      
+        <content type="html"><![CDATA[<h4 id="Android8-0"><a href="#Android8-0" class="headerlink" title="Android8.0"></a>Android8.0</h4><ol><li><p>手机系统新增自动记忆输入框的邮箱地址与密码的功能(当你点击记录密码后,会弹出选择密码的item弹框)</p><p>所以其他EditText的id需要与此类型的EditText的id不能一致,否则会默认弹出系统的密码框</p></li></ol><h4 id="Android8-1"><a href="#Android8-1" class="headerlink" title="Android8.1"></a>Android8.1</h4><ol><li><p>String.getBytes(“Unicode”)(针对Google手机8.1系统)</p><p>  在版本8.1之前，返回的byte[] 是低位在前，高位在后，8.1后直接变成了高位在前，低    位在后</p><p>​    解决办法：</p><p>  改成String.getBytes(“UnicodeLittleUnmarked”)</p><p>  注意：</p><p>  原来的getBytes(“Unicode”)默认前两个字节分别是-2，-1.</p><p>  而getBytes(“UnicodeLittleUnmarked”)去除了这两个字节。</p></li></ol><ol start="2"><li>用户在通知管理里找到应用,并打开channel one,否则应用的通知栏无法正常使用</li></ol><h4 id="Android9-0"><a href="#Android9-0" class="headerlink" title="Android9.0"></a>Android9.0</h4><ol><li><p>当应用使用了前台服务时, 清单配置文件需要增加一条新的权限</p><p>   uses-permission android:name=”android.permission.FOREGROUND_SERVICE”</p><p>   否则程序无法正常安装</p></li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Android8.0 </tag>
+            
+            <tag> API适配 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Sqlite数据库多表联合查询</title>
+      <link href="/2018/01/28/Sqlite%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%9A%E8%A1%A8%E8%81%94%E5%90%88%E6%9F%A5%E8%AF%A2/"/>
+      <url>/2018/01/28/Sqlite%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%9A%E8%A1%A8%E8%81%94%E5%90%88%E6%9F%A5%E8%AF%A2/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><strong>工作上用数据库存储文件还是很便利的，所以有时候发现一张表存储数据感觉数据结构不是很清晰的时候，就需要新加第二张表或者多张表来进行联合查询对象信，一般是用键将彼此联系起来，在表中，每个主键的值都是唯一的。这样做的目的是在不重复每个表中的所有数据的情况下，把表间的数据交叉捆绑在一起，下面，写一点简单的例子</strong></p><p></p><p>先说一下两张表各自要展现的内容有哪些</p><p></p><ul><li>第一张表是动物的种类信息，有猫、狗、鸟三种，表名：animal</li><li>第二张表是一种动物的具体种类，猫有波斯猫（persian）、 伯曼猫（birman）、布偶猫 （ragdoll）；狗有维兹拉犬（vizsla）、波利犬（puli）、蝴蝶犬（papillon）；鸟有杜鹃鸟（cuckoo）、布谷鸟（eagle ）、鹰（Egret），表名：classify。</li><li>两张表的联系是有相同的anim_id ，请留意，”anim_id” 列把上面的两个表联系了起来</li></ul><p></p><p>表结构类型如下:</p><br><strong>第一张表</strong><p></p><table><thead><tr><th style="text-align:left">animal_id</th><th>anim_name</th></tr></thead><tbody><tr><td style="text-align:left">1</td><td>cat</td></tr><tr><td style="text-align:left">2</td><td>dog</td></tr><tr><td style="text-align:left">3</td><td>bird</td></tr></tbody></table><p><strong>第二张表</strong><br>| classify_id | animal_id | detailed_name | age  |<br>| :———- | :——– | ————- | —- |<br>| 1           | 1         | persian       | 1    |<br>| 2           | 1         | birman        | 2    |<br>| 3           | 1         | ragdoll       | 5    |<br>| 4           | 2         | vizsla        | 3    |<br>| 5           | 2         | puli          | 8    |<br>| 6           | 2         | papillon      | 1    |<br>| 7           | 3         | cuckoo        | 4    |<br>| 8           | 3         | eagle         | 2    |<br>| 9           | 3         | papillon      | 3    |</p><p></p><p></p><br><strong>下面查询种类为猫的都有哪些详细种类，这些猫的年龄有多大</strong><p></p><p>SQL语句:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">SELECT animal.anim_name, classify.detailed_name, classify.age</span><br><span class="line">FROM animal</span><br><span class="line">INNER JOIN classify</span><br><span class="line">ON animal.animal_id = 1 AND classify.animal_id = 1</span><br><span class="line">ORDER BY classify.classify_id</span><br></pre></td></tr></table></figure></p><p>然后得到的表结果如下：<br>| anim_name | detailed_name | age  |<br>| :——– | ————- | —- |<br>| cat       | persian       | 1    |<br>| cat       | birman        | 2    |<br>| cat       | ragdoll       | 5    |</p><p></p><p></p><br>这是查询一种种类下的具体的动物详细分类，大多时候用表联合查询是用来筛除一些脏数据信息的，现在我们将表2添加一些其他数据，比如山羊(goat)的信息，但是表1不变<p></p><p><strong>修改后的第二张表</strong><br>| classify_id | animal_id | detailed_name | age  |<br>| :———- | :——– | ————- | —- |<br>| 1           | 1         | persian       | 1    |<br>| 2           | 1         | birman        | 2    |<br>| 3           | 1         | ragdoll       | 5    |<br>| 4           | 2         | vizsla        | 3    |<br>| 5           | 2         | puli          | 8    |<br>| 6           | 2         | papillon      | 1    |<br>| 7           | 3         | cuckoo        | 4    |<br>| 8           | 3         | eagle         | 2    |<br>| 9           | 3         | papillon      | 3    |<br>| 10          | 4         | goat          | 1    |</p><p></p><p></p><br>现在根据表1的主键来查询表2的信息，具体说来就是,都有什么动物种类，这些对应的动物种类下都有什么详细分类<p></p><p><strong>这个时候的sql语句</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">SELECT animal.anim_name, classify.detailed_name, classify.age</span><br><span class="line">FROM animal</span><br><span class="line">INNER JOIN classify</span><br><span class="line">ON animal.animal_id = classify.animal_id </span><br><span class="line">ORDER BY classify.classify_id</span><br></pre></td></tr></table></figure></p><p>然后得到的表结果如下：<br>| classify_id | animal_id | detailed_name | age  |<br>| :———- | :——– | ————- | —- |<br>| 1           | 1         | persian       | 1    |<br>| 2           | 1         | birman        | 2    |<br>| 3           | 1         | ragdoll       | 5    |<br>| 4           | 2         | vizsla        | 3    |<br>| 5           | 2         | puli          | 8    |<br>| 6           | 2         | papillon      | 1    |<br>| 7           | 3         | cuckoo        | 4    |<br>| 8           | 3         | eagle         | 2    |<br>| 9           | 3         | papillon      | 3    |</p><p></p><p></p><br><strong>其实也就是我们之前未进行修改的表2的数据，如果两个表共有的animal_id不进行指定的话，数据库就会自己去匹配两个表中相同的字段值，具体的情况要进行具体的分析，这里只给出了一种参考，具体的代码操作，还需要自己去写，也是比较简单的</strong><p></p><p>更多的多表查询请移步:<a href="http://www.w3school.com.cn/sql/index.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/sql/index.asp</a></p><h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>以上是我的理解,有什么不对的,欢迎留言指正,谢谢</p><p>​    </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Sqlite </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数据库 </tag>
+            
+            <tag> Sqlite </tag>
+            
+        </tags>
+      
+    </entry>
+    
+  
+  
+</search>
