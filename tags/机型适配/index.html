@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="数据库,Sqlite,">
+  <meta name="keywords" content="Hexo, NexT">
 
 
 
@@ -81,18 +81,13 @@
 
 
 
-<meta name="description" content="前言工作上用数据库存储文件还是很便利的，所以有时候发现一张表存储数据感觉数据结构不是很清晰的时候，就需要新加第二张表或者多张表来进行联合查询对象信，一般是用键将彼此联系起来，在表中，每个主键的值都是唯一的。这样做的目的是在不重复每个表中的所有数据的情况下，把表间的数据交叉捆绑在一起，下面，写一点简单的例子 先说一下两张表各自要展现的内容有哪些  第一张表是动物的种类信息，有猫、狗、鸟三种，表名：a">
-<meta name="keywords" content="数据库,Sqlite">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Sqlite数据库多表联合查询">
-<meta property="og:url" content="http://litchiny.github.io/2017/04/28/Sqlite数据库多表联合查询/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Litchiny&#39;s Blog">
+<meta property="og:url" content="http://litchiny.github.io/tags/机型适配/index.html">
 <meta property="og:site_name" content="Litchiny&#39;s Blog">
-<meta property="og:description" content="前言工作上用数据库存储文件还是很便利的，所以有时候发现一张表存储数据感觉数据结构不是很清晰的时候，就需要新加第二张表或者多张表来进行联合查询对象信，一般是用键将彼此联系起来，在表中，每个主键的值都是唯一的。这样做的目的是在不重复每个表中的所有数据的情况下，把表间的数据交叉捆绑在一起，下面，写一点简单的例子 先说一下两张表各自要展现的内容有哪些  第一张表是动物的种类信息，有猫、狗、鸟三种，表名：a">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-04T15:25:33.363Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Sqlite数据库多表联合查询">
-<meta name="twitter:description" content="前言工作上用数据库存储文件还是很便利的，所以有时候发现一张表存储数据感觉数据结构不是很清晰的时候，就需要新加第二张表或者多张表来进行联合查询对象信，一般是用键将彼此联系起来，在表中，每个主键的值都是唯一的。这样做的目的是在不重复每个表中的所有数据的情况下，把表间的数据交叉捆绑在一起，下面，写一点简单的例子 先说一下两张表各自要展现的内容有哪些  第一张表是动物的种类信息，有猫、狗、鸟三种，表名：a">
+<meta name="twitter:title" content="Litchiny&#39;s Blog">
 
 
 
@@ -122,13 +117,13 @@
 
 
 
-  <link rel="canonical" href="http://litchiny.github.io/2017/04/28/Sqlite数据库多表联合查询/">
+  <link rel="canonical" href="http://litchiny.github.io/tags/机型适配/">
 
 
 
 
 
-  <title>Sqlite数据库多表联合查询 | Litchiny's Blog</title>
+  <title>Tag: 机型适配 | Litchiny's Blog</title>
   
 
 
@@ -156,7 +151,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left ">
     <div class="headband"></div>
 <a href="https://github.com/litchiny" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#fff; color:#151513; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -293,497 +288,52 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
+  
+  
+  
+  <div class="post-block tag">
 
-  
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h1>机型适配<small>Tag</small>
+        </h1>
+      </div>
 
-  
-  
-  
+      
+        
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://litchiny.github.io/2017/04/28/Sqlite数据库多表联合查询/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Litchiny">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Litchiny's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
+            <a class="post-title-link" href="/2018/07/30/Android机型bug/" itemprop="url">
+              
+                <span itemprop="name">Android机型Bug</span>
+              
+            </a>
         
-          <h1 class="post-title" itemprop="name headline">Sqlite数据库多表联合查询</h1>
-        
+      </h2>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-28T12:39:04+08:00">
-                2017-04-28
-              </time>
-            
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2018-07-30T11:34:41+08:00" content="2018-07-30">
+          07-30
+        </time>
+      </div>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Sqlite/" itemprop="url" rel="index">
-                    <span itemprop="name">Sqlite</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-            <span class="post-meta-divider">|</span>
-            <span class="page-pv">本文总阅读量
-            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>次
-            </span>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><strong>工作上用数据库存储文件还是很便利的，所以有时候发现一张表存储数据感觉数据结构不是很清晰的时候，就需要新加第二张表或者多张表来进行联合查询对象信，一般是用键将彼此联系起来，在表中，每个主键的值都是唯一的。这样做的目的是在不重复每个表中的所有数据的情况下，把表间的数据交叉捆绑在一起，下面，写一点简单的例子</strong></p>
-<p></p><p>先说一下两张表各自要展现的内容有哪些</p><p></p>
-<ul>
-<li>第一张表是动物的种类信息，有猫、狗、鸟三种，表名：animal</li>
-<li>第二张表是一种动物的具体种类，猫有波斯猫（persian）、 伯曼猫（birman）、布偶猫 （ragdoll）；狗有维兹拉犬（vizsla）、波利犬（puli）、蝴蝶犬（papillon）；鸟有杜鹃鸟（cuckoo）、布谷鸟（eagle ）、鹰（Egret），表名：classify。</li>
-<li>两张表的联系是有相同的anim_id ，请留意，”anim_id” 列把上面的两个表联系了起来</li>
-</ul>
-<p></p><p>表结构类型如下:</p>
-<strong>第一张表</strong><p></p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">animal_id</th>
-<th>anim_name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">1</td>
-<td>cat</td>
-</tr>
-<tr>
-<td style="text-align:left">2</td>
-<td>dog</td>
-</tr>
-<tr>
-<td style="text-align:left">3</td>
-<td>bird</td>
-</tr>
-</tbody>
-</table>
-<p><strong>第二张表</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">classify_id</th>
-<th style="text-align:left">animal_id</th>
-<th>detailed_name</th>
-<th>age</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">1</td>
-<td style="text-align:left">1</td>
-<td>persian</td>
-<td>1</td>
-</tr>
-<tr>
-<td style="text-align:left">2</td>
-<td style="text-align:left">1</td>
-<td>birman</td>
-<td>2</td>
-</tr>
-<tr>
-<td style="text-align:left">3</td>
-<td style="text-align:left">1</td>
-<td>ragdoll</td>
-<td>5</td>
-</tr>
-<tr>
-<td style="text-align:left">4</td>
-<td style="text-align:left">2</td>
-<td>vizsla</td>
-<td>3</td>
-</tr>
-<tr>
-<td style="text-align:left">5</td>
-<td style="text-align:left">2</td>
-<td>puli</td>
-<td>8</td>
-</tr>
-<tr>
-<td style="text-align:left">6</td>
-<td style="text-align:left">2</td>
-<td>papillon</td>
-<td>1</td>
-</tr>
-<tr>
-<td style="text-align:left">7</td>
-<td style="text-align:left">3</td>
-<td>cuckoo</td>
-<td>4</td>
-</tr>
-<tr>
-<td style="text-align:left">8</td>
-<td style="text-align:left">3</td>
-<td>eagle</td>
-<td>2</td>
-</tr>
-<tr>
-<td style="text-align:left">9</td>
-<td style="text-align:left">3</td>
-<td>papillon</td>
-<td>3</td>
-</tr>
-</tbody>
-</table>
-<p></p><p></p>
-<strong>下面查询种类为猫的都有哪些详细种类，这些猫的年龄有多大</strong><p></p>
-<p>SQL语句:
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">SELECT animal.anim_name, classify.detailed_name, classify.age</span><br><span class="line">FROM animal</span><br><span class="line">INNER JOIN classify</span><br><span class="line">ON animal.animal_id = 1 AND classify.animal_id = 1</span><br><span class="line">ORDER BY classify.classify_id</span><br></pre></td></tr></table></figure></p>
-<p>然后得到的表结果如下：</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">anim_name</th>
-<th>detailed_name</th>
-<th>age</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">cat</td>
-<td>persian</td>
-<td>1</td>
-</tr>
-<tr>
-<td style="text-align:left">cat</td>
-<td>birman</td>
-<td>2</td>
-</tr>
-<tr>
-<td style="text-align:left">cat</td>
-<td>ragdoll</td>
-<td>5</td>
-</tr>
-</tbody>
-</table>
-<p></p><p></p>
-这是查询一种种类下的具体的动物详细分类，大多时候用表联合查询是用来筛除一些脏数据信息的，现在我们将表2添加一些其他数据，比如山羊(goat)的信息，但是表1不变<p></p>
-<p><strong>修改后的第二张表</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">classify_id</th>
-<th style="text-align:left">animal_id</th>
-<th>detailed_name</th>
-<th>age</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">1</td>
-<td style="text-align:left">1</td>
-<td>persian</td>
-<td>1</td>
-</tr>
-<tr>
-<td style="text-align:left">2</td>
-<td style="text-align:left">1</td>
-<td>birman</td>
-<td>2</td>
-</tr>
-<tr>
-<td style="text-align:left">3</td>
-<td style="text-align:left">1</td>
-<td>ragdoll</td>
-<td>5</td>
-</tr>
-<tr>
-<td style="text-align:left">4</td>
-<td style="text-align:left">2</td>
-<td>vizsla</td>
-<td>3</td>
-</tr>
-<tr>
-<td style="text-align:left">5</td>
-<td style="text-align:left">2</td>
-<td>puli</td>
-<td>8</td>
-</tr>
-<tr>
-<td style="text-align:left">6</td>
-<td style="text-align:left">2</td>
-<td>papillon</td>
-<td>1</td>
-</tr>
-<tr>
-<td style="text-align:left">7</td>
-<td style="text-align:left">3</td>
-<td>cuckoo</td>
-<td>4</td>
-</tr>
-<tr>
-<td style="text-align:left">8</td>
-<td style="text-align:left">3</td>
-<td>eagle</td>
-<td>2</td>
-</tr>
-<tr>
-<td style="text-align:left">9</td>
-<td style="text-align:left">3</td>
-<td>papillon</td>
-<td>3</td>
-</tr>
-<tr>
-<td style="text-align:left">10</td>
-<td style="text-align:left">4</td>
-<td>goat</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<p></p><p></p>
-现在根据表1的主键来查询表2的信息，具体说来就是,都有什么动物种类，这些对应的动物种类下都有什么详细分类<p></p>
-<p><strong>这个时候的sql语句</strong>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">SELECT animal.anim_name, classify.detailed_name, classify.age</span><br><span class="line">FROM animal</span><br><span class="line">INNER JOIN classify</span><br><span class="line">ON animal.animal_id = classify.animal_id </span><br><span class="line">ORDER BY classify.classify_id</span><br></pre></td></tr></table></figure></p>
-<p>然后得到的表结果如下：</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">classify_id</th>
-<th style="text-align:left">animal_id</th>
-<th>detailed_name</th>
-<th>age</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">1</td>
-<td style="text-align:left">1</td>
-<td>persian</td>
-<td>1</td>
-</tr>
-<tr>
-<td style="text-align:left">2</td>
-<td style="text-align:left">1</td>
-<td>birman</td>
-<td>2</td>
-</tr>
-<tr>
-<td style="text-align:left">3</td>
-<td style="text-align:left">1</td>
-<td>ragdoll</td>
-<td>5</td>
-</tr>
-<tr>
-<td style="text-align:left">4</td>
-<td style="text-align:left">2</td>
-<td>vizsla</td>
-<td>3</td>
-</tr>
-<tr>
-<td style="text-align:left">5</td>
-<td style="text-align:left">2</td>
-<td>puli</td>
-<td>8</td>
-</tr>
-<tr>
-<td style="text-align:left">6</td>
-<td style="text-align:left">2</td>
-<td>papillon</td>
-<td>1</td>
-</tr>
-<tr>
-<td style="text-align:left">7</td>
-<td style="text-align:left">3</td>
-<td>cuckoo</td>
-<td>4</td>
-</tr>
-<tr>
-<td style="text-align:left">8</td>
-<td style="text-align:left">3</td>
-<td>eagle</td>
-<td>2</td>
-</tr>
-<tr>
-<td style="text-align:left">9</td>
-<td style="text-align:left">3</td>
-<td>papillon</td>
-<td>3</td>
-</tr>
-</tbody>
-</table>
-<p></p><p></p>
-<strong>其实也就是我们之前未进行修改的表2的数据，如果两个表共有的animal_id不进行指定的话，数据库就会自己去匹配两个表中相同的字段值，具体的情况要进行具体的分析，这里只给出了一种参考，具体的代码操作，还需要自己去写，也是比较简单的</strong><p></p>
-<p>更多的多表查询请移步:<a href="http://www.w3school.com.cn/sql/index.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/sql/index.asp</a></p>
-<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>以上是我的理解,有什么不对的,欢迎留言指正,谢谢</p>
-
-      
-    </div>
-    
-    
-    
-	<div>
-		
-		<div>
-    
-        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
-    
-</div>
-	
-	</div>
-
-	<div>
-      
-        
-<div class="my_post_copyright">
-  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
-  
-  <!-- JS库 sweetalert 可修改路径 -->
-  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2017/04/28/Sqlite数据库多表联合查询/">Sqlite数据库多表联合查询</a></p>
-  <p><span>文章作者:</span><a href="/" title="访问 Litchiny 的个人博客">Litchiny</a></p>
-  <p><span>原始链接:</span><a href="/2017/04/28/Sqlite数据库多表联合查询/" title="Sqlite数据库多表联合查询">http://litchiny.github.io/2017/04/28/Sqlite数据库多表联合查询/</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://litchiny.github.io/2017/04/28/Sqlite数据库多表联合查询/" aria-label="复制成功！"></i></span>
-  </p>
-  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
-</div>
-<script> 
-    var clipboard = new Clipboard('.fa-clipboard');
-    $(".fa-clipboard").click(function(){
-      clipboard.on('success', function(){
-        swal({   
-          title: "",   
-          text: '复制成功',
-          icon: "success", 
-          showConfirmButton: true
-          });
-    });
-    });  
-</script>
-
-      
-	</div>
-	
-    
-
-    
-
-    
-
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/数据库/" <i="" class="fa fa-tag"> 数据库</a>
-          
-            <a href="/tags/Sqlite/" <i="" class="fa fa-tag"> Sqlite</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/02/05/Android8.0版本新特性/" rel="prev" title="Android8.0版本新特性">
-                Android8.0版本新特性 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
+    </header>
   </article>
 
 
-
-    <div class="post-spread">
       
     </div>
+
   </div>
+  
+  
+  
+
+  
 
 
           </div>
@@ -791,10 +341,6 @@
 
 
           
-
-  
-
-
 
         </div>
         
@@ -815,17 +361,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -842,7 +379,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -864,7 +401,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -930,22 +467,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最后"><span class="nav-number">2.</span> <span class="nav-text">最后</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -1106,10 +627,6 @@
   
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
 
   
 
