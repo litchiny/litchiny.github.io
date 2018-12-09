@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://litchiny.github.io/"/>
-  <updated>2018-12-04T15:33:22.355Z</updated>
+  <updated>2018-12-09T05:23:52.101Z</updated>
   <id>http://litchiny.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>建站 问题和解决(持续更新...)</title>
+    <link href="http://litchiny.github.io/2018/12/09/%E5%BB%BA%E7%AB%99%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>http://litchiny.github.io/2018/12/09/建站遇到的问题/</id>
+    <published>2018-12-09T05:22:30.000Z</published>
+    <updated>2018-12-09T05:23:52.101Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="服务器-bandwagon-环境-Centos6-x64-LNMP"><a href="#服务器-bandwagon-环境-Centos6-x64-LNMP" class="headerlink" title="服务器: bandwagon       环境: Centos6 x64     LNMP"></a>服务器: bandwagon       环境: Centos6 x64     LNMP</h2><h3 id="Q1-Let’s-Encrypt-Certbot-客户端无法申请https证书"><a href="#Q1-Let’s-Encrypt-Certbot-客户端无法申请https证书" class="headerlink" title="Q1: Let’s Encrypt Certbot 客户端无法申请https证书"></a>Q1: Let’s Encrypt Certbot 客户端无法申请https证书</h3><p><strong>原因:</strong> Licence支持的python需要在2.7及其以上,而bandwagon的是python2.6<strong>解决:</strong><a href="https://www.banwagongzw.com/46.html" target="_blank" rel="noopener">CentOS6 x64 编译安装 Python3 和 Python2.6 共存</a><strong>扩展:</strong><a href="https://www.hi-linux.com/posts/6968.html" target="_blank" rel="noopener">Let&#39;s Encrypt 免费通配符 SSL 证书申请教程</a><a href="https://certbot.eff.org/" target="_blank" rel="noopener">Certbot官网</a></p><p>Q2: </p><p>S1: </p><p><a href="https://lnmp.org/faq/lnmp-vhost-add-howto.html" target="_blank" rel="noopener">LNMP添加、删除虚拟主机及伪静态使用教程</a>[LAMP 和 LNMP 下服务的几种启动方式]:(<a href="http://blog.51cto.com/frankch/1747866" target="_blank" rel="noopener">http://blog.51cto.com/frankch/1747866</a>)</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;服务器-bandwagon-环境-Centos6-x64-LNMP&quot;&gt;&lt;a href=&quot;#服务器-bandwagon-环境-Centos6-x64-LNMP&quot; class=&quot;headerlink&quot; title=&quot;服务器: bandwagon       环境: C
+      
+    
+    </summary>
+    
+      <category term="Centos" scheme="http://litchiny.github.io/categories/Centos/"/>
+    
+    
+      <category term="Centos" scheme="http://litchiny.github.io/tags/Centos/"/>
+    
+      <category term="Certbot" scheme="http://litchiny.github.io/tags/Certbot/"/>
+    
+  </entry>
   
   <entry>
     <title>Android机型Bug</title>
