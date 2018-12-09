@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://litchiny.github.io/"/>
-  <updated>2018-12-09T05:23:52.101Z</updated>
+  <updated>2018-12-09T05:44:44.180Z</updated>
   <id>http://litchiny.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://litchiny.github.io/2018/12/09/%E5%BB%BA%E7%AB%99%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/"/>
     <id>http://litchiny.github.io/2018/12/09/建站遇到的问题/</id>
     <published>2018-12-09T05:22:30.000Z</published>
-    <updated>2018-12-09T05:23:52.101Z</updated>
+    <updated>2018-12-09T05:44:44.180Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="服务器-bandwagon-环境-Centos6-x64-LNMP"><a href="#服务器-bandwagon-环境-Centos6-x64-LNMP" class="headerlink" title="服务器: bandwagon       环境: Centos6 x64     LNMP"></a>服务器: bandwagon       环境: Centos6 x64     LNMP</h2><h3 id="Q1-Let’s-Encrypt-Certbot-客户端无法申请https证书"><a href="#Q1-Let’s-Encrypt-Certbot-客户端无法申请https证书" class="headerlink" title="Q1: Let’s Encrypt Certbot 客户端无法申请https证书"></a>Q1: Let’s Encrypt Certbot 客户端无法申请https证书</h3><p><strong>原因:</strong> Licence支持的python需要在2.7及其以上,而bandwagon的是python2.6<strong>解决:</strong><a href="https://www.banwagongzw.com/46.html" target="_blank" rel="noopener">CentOS6 x64 编译安装 Python3 和 Python2.6 共存</a><strong>扩展:</strong><a href="https://www.hi-linux.com/posts/6968.html" target="_blank" rel="noopener">Let&#39;s Encrypt 免费通配符 SSL 证书申请教程</a><a href="https://certbot.eff.org/" target="_blank" rel="noopener">Certbot官网</a></p><p>Q2: </p><p>S1: </p><p><a href="https://lnmp.org/faq/lnmp-vhost-add-howto.html" target="_blank" rel="noopener">LNMP添加、删除虚拟主机及伪静态使用教程</a>[LAMP 和 LNMP 下服务的几种启动方式]:(<a href="http://blog.51cto.com/frankch/1747866" target="_blank" rel="noopener">http://blog.51cto.com/frankch/1747866</a>)</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="服务器-bandwagon-环境-Centos6-x64-LNMP"><a href="#服务器-bandwagon-环境-Centos6-x64-LNMP" class="headerlink" title="服务器: bandwagon       环境: Centos6 x64     LNMP"></a>服务器: bandwagon       环境: Centos6 x64     LNMP</h2><h3 id="Q1-Let’s-Encrypt-Certbot-客户端无法申请https证书"><a href="#Q1-Let’s-Encrypt-Certbot-客户端无法申请https证书" class="headerlink" title="Q1: Let’s Encrypt Certbot 客户端无法申请https证书"></a>Q1: Let’s Encrypt Certbot 客户端无法申请https证书</h3><p><strong>原因:</strong> Licence支持的python需要在2.7及其以上,而bandwagon的是python2.6<strong>解决:</strong><a href="https://www.banwagongzw.com/46.html" target="_blank" rel="noopener">CentOS6 x64 编译安装 Python3 和 Python2.6 共存</a><strong>扩展:</strong><a href="https://www.hi-linux.com/posts/6968.html" target="_blank" rel="noopener">Let&#39;s Encrypt 免费通配符 SSL 证书申请教程</a><a href="https://certbot.eff.org/" target="_blank" rel="noopener">Certbot官网</a></p><p>O1: </p><p><a href="https://lnmp.org/faq/lnmp-vhost-add-howto.html" target="_blank" rel="noopener">LNMP添加、删除虚拟主机及伪静态使用教程</a>[LAMP 和 LNMP 下服务的几种启动方式]:(<a href="http://blog.51cto.com/frankch/1747866" target="_blank" rel="noopener">http://blog.51cto.com/frankch/1747866</a>)</p>]]></content>
     
     <summary type="html">
     
@@ -44,23 +44,47 @@
   </entry>
   
   <entry>
-    <title>Android机型Bug</title>
-    <link href="http://litchiny.github.io/2018/07/30/Android%E6%9C%BA%E5%9E%8Bbug/"/>
-    <id>http://litchiny.github.io/2018/07/30/Android机型bug/</id>
-    <published>2018-07-30T03:34:41.000Z</published>
-    <updated>2018-12-04T15:33:22.355Z</updated>
+    <title>Android API适配</title>
+    <link href="http://litchiny.github.io/2018/09/10/Android%20API%E9%80%82%E9%85%8D/"/>
+    <id>http://litchiny.github.io/2018/09/10/Android API适配/</id>
+    <published>2018-09-10T04:38:12.000Z</published>
+    <updated>2018-12-09T05:47:20.921Z</updated>
     
-    <content type="html"><![CDATA[<ol><li><p>拍照后会照片自动旋转出现的机型: ​    Samsung SM-N9008S Android 5.0解决方法:  <a href="http://www.voidcn.com/article/p-apfpsnmq-bek.html" target="_blank" rel="noopener">http://www.voidcn.com/article/p-apfpsnmq-bek.html</a></p></li><li><p>oppo手机设置startForeground通知栏不显示出现的机型:​        OPPO R9m Android5.1,OPPO R9s Android5.1解决办法: 众所周知,oppo手机对开发者相当不友好,所以它默认的通知栏是关闭的,如果你是刚安装就打开应用然后打开了通知栏服务,但是在程序运行期间才打开通知栏的开关,那么你很有可能会在通知栏里看不到你的应用的通知,解决办法两个:2.1. 先打开通知栏开关,再打开应用2.2. 将应用切换后台后,可以考虑监听,不过我觉得没有必要,后台杀死重新打开就好了</p></li><li><p>Allview X5 Soul Pro设备在罗马尼亚语言下解析数据异常 分析和解决: DecimalFormat(“#.#”).format(num.toDouble()) 在这里,该设备会自动把”.”替换为”,” ,由此造成解析异常  可以切换别的方式来使数据只保留一位小数显示  异常信息:   java.lang.NumberFormatException For input string: “0,4”</p></li><li><p>小米5s在拍摄界面切换至自拍镜头时，画面上下反过来解决办法: 此bug出现的原因是小米在切换前置镜头的时候,应该将相机设置为270度而不是90度,大多数手机在调用系统的Camera的原生API的时候,如果出现上下颠倒现象,请检查角度是否设置正确</p></li></ol>]]></content>
+    <content type="html"><![CDATA[<p>Android API适配</p><h3 id="1-Camera"><a href="#1-Camera" class="headerlink" title="1. Camera"></a>1. Camera</h3><ol><li>使用Camera2的时候, 清单配置文件需要增加允许手机开启硬件加速考虑到现有国内厂家对Camera2的支持度一般,不建议在实际开发项目中使用此API,略坑</li></ol><h3 id="2-Design"><a href="#2-Design" class="headerlink" title="2. Design"></a>2. Design</h3>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;拍照后会照片自动旋转
-出现的机型: 
-​    Samsung SM-N9008S Android 5.0
-解决方法:  &lt;a href=&quot;http://www.voidcn.com/article/p-apfpsnmq-bek.html&quot; target=
+        &lt;p&gt;Android API适配&lt;/p&gt;
+&lt;h3 id=&quot;1-Camera&quot;&gt;&lt;a href=&quot;#1-Camera&quot; class=&quot;headerlink&quot; title=&quot;1. Camera&quot;&gt;&lt;/a&gt;1. Camera&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;使用Camera2的时候, 清单配
+      
+    
+    </summary>
+    
+      <category term="Android" scheme="http://litchiny.github.io/categories/Android/"/>
+    
+    
+      <category term="API适配" scheme="http://litchiny.github.io/tags/API%E9%80%82%E9%85%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android机型Bug</title>
+    <link href="http://litchiny.github.io/2018/07/30/Android%E6%9C%BA%E5%9E%8Bbug/"/>
+    <id>http://litchiny.github.io/2018/07/30/Android机型bug/</id>
+    <published>2018-07-30T03:34:41.000Z</published>
+    <updated>2018-12-09T05:43:35.873Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1-Samsung"><a href="#1-Samsung" class="headerlink" title="1. Samsung"></a>1. Samsung</h3><p>Q1: 拍照后会照片自动旋转 Phone: Samsung SM-N9008S Android 5.0S1: <a href="http://www.voidcn.com/article/p-apfpsnmq-bek.html" target="_blank" rel="noopener">三星拍照旋转问题</a></p><h3 id="2-OPPO"><a href="#2-OPPO" class="headerlink" title="2. OPPO"></a>2. OPPO</h3><p>Q1: startForeground通知栏不显示Phone: OPPO R9m Android5.1,OPPO R9s Android5.1S1: OPPO手机对新apk默认的通知栏显示是关闭,参考解决: </p><ol><li>先打开通知栏开关,再打开应用</li><li>将应用切换后台后,可以考虑监听,不过我觉得没有必要,后台杀死重新打开就好了</li></ol><h3 id="3-Allview"><a href="#3-Allview" class="headerlink" title="3. Allview"></a>3. Allview</h3><p>Q1: 在罗马尼亚语言下String转一位小数解析数据异常Phone: Allview X5 Soul ProS1: DecimalFormat(“#.#”).format(num.toDouble())  设备会自动把”.”替换为”,” ,类似”0,4”,可使用其他转换方法O1: 此问题不局限于此类型手机</p><h3 id="4-小米"><a href="#4-小米" class="headerlink" title="4. 小米"></a>4. 小米</h3><p>Q1: 自定义相机自拍模式下,画面上下颠倒Phone: 小米5sS1: 小米在切换前置镜头的时候,应该将相机设置为270度而不是90度,大多数手机在调用系统的Camera的原生API的时候,如果出现上下颠倒现象,请检查角度是否设置正确</p><h3 id="5-索尼手机"><a href="#5-索尼手机" class="headerlink" title="5. 索尼手机"></a>5. 索尼手机</h3><p>Q1: Edittext设置超出显示长度范围的内容后不显示Phone: S1: 截取到最大显示长度之前的来显示</p><h3 id="6-华为荣耀"><a href="#6-华为荣耀" class="headerlink" title="6. 华为荣耀"></a>6. 华为荣耀</h3><p>Q1: 无前置摄像头Phone: 荣耀7iS1: 不显示可切换至前置摄像头的按钮</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;1-Samsung&quot;&gt;&lt;a href=&quot;#1-Samsung&quot; class=&quot;headerlink&quot; title=&quot;1. Samsung&quot;&gt;&lt;/a&gt;1. Samsung&lt;/h3&gt;&lt;p&gt;Q1: 拍照后会照片自动旋转
+ Phone: Samsung SM-N9008S
       
     
     </summary>
@@ -94,9 +118,9 @@
       <category term="Android" scheme="http://litchiny.github.io/categories/Android/"/>
     
     
-      <category term="Android8.0" scheme="http://litchiny.github.io/tags/Android8-0/"/>
-    
       <category term="API适配" scheme="http://litchiny.github.io/tags/API%E9%80%82%E9%85%8D/"/>
+    
+      <category term="Android8.0" scheme="http://litchiny.github.io/tags/Android8-0/"/>
     
   </entry>
   
