@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Litchiny&#39;s Blog">
 <meta property="og:description" content="1. SamsungQ1: 拍照后会照片自动旋转  Phone: Samsung SM-N9008S Android 5.0 S1: 三星拍照旋转问题 2. OPPOQ1: startForeground通知栏不显示 Phone: OPPO R9m Android5.1,OPPO R9s Android5.1 S1: OPPO手机对新apk默认的通知栏显示是关闭,参考解决:   先打开通知栏开关,">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-09T05:43:35.873Z">
+<meta property="og:updated_time" content="2018-12-09T09:28:44.531Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android机型Bug">
 <meta name="twitter:description" content="1. SamsungQ1: 拍照后会照片自动旋转  Phone: Samsung SM-N9008S Android 5.0 S1: 三星拍照旋转问题 2. OPPOQ1: startForeground通知栏不显示 Phone: OPPO R9m Android5.1,OPPO R9s Android5.1 S1: OPPO手机对新apk默认的通知栏显示是关闭,参考解决:   先打开通知栏开关,">
@@ -411,29 +411,29 @@
       
 
       
-        <h3 id="1-Samsung"><a href="#1-Samsung" class="headerlink" title="1. Samsung"></a>1. Samsung</h3><p>Q1: 拍照后会照片自动旋转
- Phone: Samsung SM-N9008S Android 5.0
-S1: <a href="http://www.voidcn.com/article/p-apfpsnmq-bek.html" target="_blank" rel="noopener">三星拍照旋转问题</a></p>
-<h3 id="2-OPPO"><a href="#2-OPPO" class="headerlink" title="2. OPPO"></a>2. OPPO</h3><p>Q1: startForeground通知栏不显示
-Phone: OPPO R9m Android5.1,OPPO R9s Android5.1
-S1: OPPO手机对新apk默认的通知栏显示是关闭,参考解决: </p>
+        <h3 id="1-Samsung"><a href="#1-Samsung" class="headerlink" title="1. Samsung"></a>1. Samsung</h3><p>Q1: 拍照后会照片自动旋转</p>
+<p> Phone: Samsung SM-N9008S Android 5.0</p>
+<p>S1: <a href="http://www.voidcn.com/article/p-apfpsnmq-bek.html" target="_blank" rel="noopener">三星拍照旋转问题</a></p>
+<h3 id="2-OPPO"><a href="#2-OPPO" class="headerlink" title="2. OPPO"></a>2. OPPO</h3><p>Q1: startForeground通知栏不显示</p>
+<p>Phone: OPPO R9m Android5.1,OPPO R9s Android5.1</p>
+<p>S1: OPPO手机对新apk默认的通知栏显示是关闭,参考解决: </p>
 <ol>
 <li>先打开通知栏开关,再打开应用</li>
 <li>将应用切换后台后,可以考虑监听,不过我觉得没有必要,后台杀死重新打开就好了</li>
 </ol>
-<h3 id="3-Allview"><a href="#3-Allview" class="headerlink" title="3. Allview"></a>3. Allview</h3><p>Q1: 在罗马尼亚语言下String转一位小数解析数据异常
-Phone: Allview X5 Soul Pro
-S1: DecimalFormat(“#.#”).format(num.toDouble())  设备会自动把”.”替换为”,” ,类似”0,4”,可使用其他转换方法
-O1: 此问题不局限于此类型手机</p>
-<h3 id="4-小米"><a href="#4-小米" class="headerlink" title="4. 小米"></a>4. 小米</h3><p>Q1: 自定义相机自拍模式下,画面上下颠倒
-Phone: 小米5s
-S1: 小米在切换前置镜头的时候,应该将相机设置为270度而不是90度,大多数手机在调用系统的Camera的原生API的时候,如果出现上下颠倒现象,请检查角度是否设置正确</p>
-<h3 id="5-索尼手机"><a href="#5-索尼手机" class="headerlink" title="5. 索尼手机"></a>5. 索尼手机</h3><p>Q1: Edittext设置超出显示长度范围的内容后不显示
-Phone: 
-S1: 截取到最大显示长度之前的来显示</p>
-<h3 id="6-华为荣耀"><a href="#6-华为荣耀" class="headerlink" title="6. 华为荣耀"></a>6. 华为荣耀</h3><p>Q1: 无前置摄像头
-Phone: 荣耀7i
-S1: 不显示可切换至前置摄像头的按钮</p>
+<h3 id="3-Allview"><a href="#3-Allview" class="headerlink" title="3. Allview"></a>3. Allview</h3><p>Q1: 在罗马尼亚语言下String转一位小数解析数据异常</p>
+<p>Phone: Allview X5 Soul Pro</p>
+<p>S1: DecimalFormat(“#.#”).format(num.toDouble())  设备会自动把”.”替换为”,” ,类似”0,4”,可使用其他转换方法</p>
+<p>O1: 此问题不局限于此类型手机</p>
+<h3 id="4-小米"><a href="#4-小米" class="headerlink" title="4. 小米"></a>4. 小米</h3><p>Q1: 自定义相机自拍模式下,画面上下颠倒</p>
+<p>Phone: 小米5s</p>
+<p>S1: 小米在切换前置镜头的时候,应该将相机设置为270度而不是90度,大多数手机在调用系统的Camera的原生API的时候,如果出现上下颠倒现象,请检查角度是否设置正确</p>
+<h3 id="5-索尼手机"><a href="#5-索尼手机" class="headerlink" title="5. 索尼手机"></a>5. 索尼手机</h3><p>Q1: Edittext设置超出显示长度范围的内容后不显示</p>
+<p>Phone: </p>
+<p>S1: 截取到最大显示长度之前的来显示</p>
+<h3 id="6-华为荣耀"><a href="#6-华为荣耀" class="headerlink" title="6. 华为荣耀"></a>6. 华为荣耀</h3><p>Q1: 无前置摄像头</p>
+<p>Phone: 荣耀7i</p>
+<p>S1: 不显示可切换至前置摄像头的按钮</p>
 
       
     </div>
