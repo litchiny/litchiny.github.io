@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Litchiny&#39;s Blog</title>
   
-  <subtitle>A code lover</subtitle>
+  <subtitle>生于忧患 , 死于安乐.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://litchiny.github.io/"/>
-  <updated>2018-12-09T09:35:49.876Z</updated>
+  <updated>2018-12-16T07:36:03.563Z</updated>
   <id>http://litchiny.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>科学上网相关指南</title>
+    <link href="http://litchiny.github.io/2018/12/16/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E7%9B%B8%E5%85%B3%E6%8C%87%E5%8D%97/"/>
+    <id>http://litchiny.github.io/2018/12/16/科学上网相关指南/</id>
+    <published>2018-12-16T07:35:34.000Z</published>
+    <updated>2018-12-16T07:36:03.563Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="科学上网相关指南"><a href="#科学上网相关指南" class="headerlink" title="科学上网相关指南"></a>科学上网相关指南</h1><h2 id="1-搬瓦工相关问题"><a href="#1-搬瓦工相关问题" class="headerlink" title="1. 搬瓦工相关问题"></a>1. 搬瓦工相关问题</h2><p><a href="https://www.bandwagonhost.net/3252.html" target="_blank" rel="noopener">搬瓦工换IP</a></p><p><a href="https://www.bandwagonhost.net/1330.html" target="_blank" rel="noopener">搬瓦工 VPS 由于“high CPU usage”被暂停的原因和解决方法</a></p><p><a href="https://www.bandwagonhost.net/527.html" target="_blank" rel="noopener">搬瓦工 VPS 使用政策详解之 CPU 限制</a></p><h2 id="2-使用V2Ray科学上网"><a href="#2-使用V2Ray科学上网" class="headerlink" title="2. 使用V2Ray科学上网"></a>2. 使用V2Ray科学上网</h2><p><a href="https://233yes.com/post/2/" target="_blank" rel="noopener">V2Ray 一键搭建和优化详细图文教程</a></p><p><a href="https://233yes.com/post/1/" target="_blank" rel="noopener">最好用的 V2Ray 一键安装脚本 &amp; 管理脚本</a></p><p><a href="https://233yes.com/post/8/" target="_blank" rel="noopener">V2RayN 使用教程</a></p><p><a href="https://233yes.com/post/5/" target="_blank" rel="noopener">使用 V2Ray 的 WebSocket 传输协议 + Cloudflare 拯救被墙的 IP</a></p><p><a href="https://233yes.com/post/10/" target="_blank" rel="noopener">V2Ray 一键安装脚本疑问集合</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;科学上网相关指南&quot;&gt;&lt;a href=&quot;#科学上网相关指南&quot; class=&quot;headerlink&quot; title=&quot;科学上网相关指南&quot;&gt;&lt;/a&gt;科学上网相关指南&lt;/h1&gt;&lt;h2 id=&quot;1-搬瓦工相关问题&quot;&gt;&lt;a href=&quot;#1-搬瓦工相关问题&quot; class=&quot;he
+      
+    
+    </summary>
+    
+      <category term="科学上网" scheme="http://litchiny.github.io/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    
+      <category term="V2Ray" scheme="http://litchiny.github.io/tags/V2Ray/"/>
+    
+      <category term="bandwagon" scheme="http://litchiny.github.io/tags/bandwagon/"/>
+    
+  </entry>
   
   <entry>
     <title>建站 问题和解决(持续更新...)</title>
