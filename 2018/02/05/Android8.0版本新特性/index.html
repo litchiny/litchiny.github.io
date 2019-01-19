@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="API适配,Android8.0,">
+  <meta name="keywords" content="Android8.0,API适配,">
 
 
 
@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="Android8.0 手机系统新增自动记忆输入框的邮箱地址与密码的功能(当你点击记录密码后,会弹出选择密码的item弹框) 所以其他EditText的id需要与此类型的EditText的id不能一致,否则会默认弹出系统的密码框   Android8.1 String.getBytes(“Unicode”)(针对Google手机8.1系统)   在版本8.1之前，返回的byte[] 是低位在前，高位">
-<meta name="keywords" content="API适配,Android8.0">
+<meta name="description" content="Android8.0 EditText新增自动记忆功能A1: 其他EditText的id需要与此类型的EditText的id不能一致,否则会默认弹出其他同一id的密码框内容填充   Android8.1 String.getBytes(“Unicode”)(Google手机8.1系统)  在版本8.1之前，返回的byte[] 是低位在前，高位在后，8.1后直接变成了高位在前，低    位在后">
+<meta name="keywords" content="Android8.0,API适配">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android8.0版本新特性">
 <meta property="og:url" content="http://litchiny.github.io/2018/02/05/Android8.0版本新特性/index.html">
 <meta property="og:site_name" content="Litchiny&#39;s Blog">
-<meta property="og:description" content="Android8.0 手机系统新增自动记忆输入框的邮箱地址与密码的功能(当你点击记录密码后,会弹出选择密码的item弹框) 所以其他EditText的id需要与此类型的EditText的id不能一致,否则会默认弹出系统的密码框   Android8.1 String.getBytes(“Unicode”)(针对Google手机8.1系统)   在版本8.1之前，返回的byte[] 是低位在前，高位">
+<meta property="og:description" content="Android8.0 EditText新增自动记忆功能A1: 其他EditText的id需要与此类型的EditText的id不能一致,否则会默认弹出其他同一id的密码框内容填充   Android8.1 String.getBytes(“Unicode”)(Google手机8.1系统)  在版本8.1之前，返回的byte[] 是低位在前，高位在后，8.1后直接变成了高位在前，低    位在后">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-02T10:18:28.154Z">
+<meta property="og:updated_time" content="2018-12-16T08:04:32.232Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android8.0版本新特性">
-<meta name="twitter:description" content="Android8.0 手机系统新增自动记忆输入框的邮箱地址与密码的功能(当你点击记录密码后,会弹出选择密码的item弹框) 所以其他EditText的id需要与此类型的EditText的id不能一致,否则会默认弹出系统的密码框   Android8.1 String.getBytes(“Unicode”)(针对Google手机8.1系统)   在版本8.1之前，返回的byte[] 是低位在前，高位">
+<meta name="twitter:description" content="Android8.0 EditText新增自动记忆功能A1: 其他EditText的id需要与此类型的EditText的id不能一致,否则会默认弹出其他同一id的密码框内容填充   Android8.1 String.getBytes(“Unicode”)(Google手机8.1系统)  在版本8.1之前，返回的byte[] 是低位在前，高位在后，8.1后直接变成了高位在前，低    位在后">
 
 
 
@@ -401,28 +401,26 @@
       
 
       
-        <h4 id="Android8-0"><a href="#Android8-0" class="headerlink" title="Android8.0"></a>Android8.0</h4><ol>
-<li><p>手机系统新增自动记忆输入框的邮箱地址与密码的功能(当你点击记录密码后,会弹出选择密码的item弹框)</p>
-<p>所以其他EditText的id需要与此类型的EditText的id不能一致,否则会默认弹出系统的密码框</p>
+        <h2 id="Android8-0"><a href="#Android8-0" class="headerlink" title="Android8.0"></a>Android8.0</h2><ol>
+<li><h4 id="EditText新增自动记忆功能"><a href="#EditText新增自动记忆功能" class="headerlink" title="EditText新增自动记忆功能"></a>EditText新增自动记忆功能</h4><p>A1: 其他EditText的id需要与此类型的EditText的id不能一致,否则会默认弹出其他同一id的密码框内容填充</p>
 </li>
 </ol>
-<h4 id="Android8-1"><a href="#Android8-1" class="headerlink" title="Android8.1"></a>Android8.1</h4><ol>
-<li><p>String.getBytes(“Unicode”)(针对Google手机8.1系统)</p>
-<p>  在版本8.1之前，返回的byte[] 是低位在前，高位在后，8.1后直接变成了高位在前，低    位在后</p>
-<p>​    解决办法：</p>
-<p>  改成String.getBytes(“UnicodeLittleUnmarked”)</p>
+<h2 id="Android8-1"><a href="#Android8-1" class="headerlink" title="Android8.1"></a>Android8.1</h2><ol>
+<li><h4 id="String-getBytes-“Unicode”-Google手机8-1系统"><a href="#String-getBytes-“Unicode”-Google手机8-1系统" class="headerlink" title="String.getBytes(“Unicode”)(Google手机8.1系统)"></a>String.getBytes(“Unicode”)(Google手机8.1系统)</h4><p>  在版本8.1之前，返回的byte[] 是低位在前，高位在后，8.1后直接变成了高位在前，低    位在后</p>
+<p>  A1: 改成String.getBytes(“UnicodeLittleUnmarked”)</p>
 <p>  注意：</p>
-<p>  原来的getBytes(“Unicode”)默认前两个字节分别是-2，-1.</p>
-<p>  而getBytes(“UnicodeLittleUnmarked”)去除了这两个字节。</p>
+<p>   原来的getBytes(“Unicode”)默认前两个字节分别是-2，-1.</p>
+<p>   而getBytes(“UnicodeLittleUnmarked”)去除了这两个字节。</p>
 </li>
+<li><h4 id="应用的通知栏正常使用需要在通知管理里找到应用-并打开channel-one"><a href="#应用的通知栏正常使用需要在通知管理里找到应用-并打开channel-one" class="headerlink" title="应用的通知栏正常使用需要在通知管理里找到应用,并打开channel one"></a>应用的通知栏正常使用需要在通知管理里找到应用,并打开channel one</h4></li>
 </ol>
-<ol start="2">
-<li>用户在通知管理里找到应用,并打开channel one,否则应用的通知栏无法正常使用</li>
-</ol>
-<h4 id="Android9-0"><a href="#Android9-0" class="headerlink" title="Android9.0"></a>Android9.0</h4><ol>
-<li><p>当应用使用了前台服务时, 清单配置文件需要增加一条新的权限</p>
-<p>   uses-permission android:name=”android.permission.FOREGROUND_SERVICE”</p>
+<h2 id="Android9-0"><a href="#Android9-0" class="headerlink" title="Android9.0"></a>Android9.0</h2><ol>
+<li><h4 id="当应用使用了前台服务时-清单配置文件增加一条新权限"><a href="#当应用使用了前台服务时-清单配置文件增加一条新权限" class="headerlink" title="当应用使用了前台服务时, 清单配置文件增加一条新权限"></a>当应用使用了前台服务时, 清单配置文件增加一条新权限</h4><p>   uses-permission android:name=”android.permission.FOREGROUND_SERVICE”</p>
 <p>   否则程序无法正常安装</p>
+</li>
+<li><h4 id="针对http请求-需要在清单配置文件里的application需要增加一条设置"><a href="#针对http请求-需要在清单配置文件里的application需要增加一条设置" class="headerlink" title="针对http请求,需要在清单配置文件里的application需要增加一条设置"></a>针对http请求,需要在清单配置文件里的application需要增加一条设置</h4><p>   android:usesCleartextTraffic=”true”</p>
+<p>   否则抛出异常 java.net.UnknownServiceException: CLEARTEXT communication to  not permitted by network security policy</p>
+<p>   原因是Google现在推荐使用https,所以http是不安全且未来将会被弃用的.</p>
 </li>
 </ol>
 
@@ -485,9 +483,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/API适配/" <i="" class="fa fa-tag"> API适配</a>
-          
             <a href="/tags/Android8-0/" <i="" class="fa fa-tag"> Android8.0</a>
+          
+            <a href="/tags/API适配/" <i="" class="fa fa-tag"> API适配</a>
           
         </div>
       
@@ -594,7 +592,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">19</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -672,7 +670,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Android8-0"><span class="nav-number">1.</span> <span class="nav-text">Android8.0</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Android8-1"><span class="nav-number">2.</span> <span class="nav-text">Android8.1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Android9-0"><span class="nav-number">3.</span> <span class="nav-text">Android9.0</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Android8-0"><span class="nav-number">1.</span> <span class="nav-text">Android8.0</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#EditText新增自动记忆功能"><span class="nav-number">1.0.1.</span> <span class="nav-text">EditText新增自动记忆功能</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#Android8-1"><span class="nav-number">2.</span> <span class="nav-text">Android8.1</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#String-getBytes-“Unicode”-Google手机8-1系统"><span class="nav-number">2.0.1.</span> <span class="nav-text">String.getBytes(“Unicode”)(Google手机8.1系统)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#应用的通知栏正常使用需要在通知管理里找到应用-并打开channel-one"><span class="nav-number">2.0.2.</span> <span class="nav-text">应用的通知栏正常使用需要在通知管理里找到应用,并打开channel one</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Android9-0"><span class="nav-number">3.</span> <span class="nav-text">Android9.0</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#当应用使用了前台服务时-清单配置文件增加一条新权限"><span class="nav-number">3.0.1.</span> <span class="nav-text">当应用使用了前台服务时, 清单配置文件增加一条新权限</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#针对http请求-需要在清单配置文件里的application需要增加一条设置"><span class="nav-number">3.0.2.</span> <span class="nav-text">针对http请求,需要在清单配置文件里的application需要增加一条设置</span></a></li></ol></li></div>
             
 
           </div>
@@ -692,7 +690,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
