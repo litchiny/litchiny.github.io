@@ -53,29 +53,6 @@
     </entry>
     
     <entry>
-      <title>Android API适配</title>
-      <link href="/2018/09/10/Android%20API%E9%80%82%E9%85%8D/"/>
-      <url>/2018/09/10/Android%20API%E9%80%82%E9%85%8D/</url>
-      
-        <content type="html"><![CDATA[<p>Android API适配</p><h3 id="1-Camera"><a href="#1-Camera" class="headerlink" title="1. Camera"></a>1. Camera</h3><ol><li>使用Camera2的时候, 清单配置文件需要增加允许手机开启硬件加速考虑到现有国内厂家对Camera2的支持度一般,不建议在实际开发项目中使用此API,略坑</li></ol><h3 id="2-Design"><a href="#2-Design" class="headerlink" title="2. Design"></a>2. Design</h3>]]></content>
-      
-      
-      <categories>
-          
-          <category> Android </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> API适配 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
       <title>Android机型Bug</title>
       <link href="/2018/07/30/Android%E6%9C%BA%E5%9E%8Bbug/"/>
       <url>/2018/07/30/Android%E6%9C%BA%E5%9E%8Bbug/</url>

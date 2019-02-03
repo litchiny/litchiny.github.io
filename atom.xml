@@ -71,33 +71,6 @@
   </entry>
   
   <entry>
-    <title>Android API适配</title>
-    <link href="http://litchiny.github.io/2018/09/10/Android%20API%E9%80%82%E9%85%8D/"/>
-    <id>http://litchiny.github.io/2018/09/10/Android API适配/</id>
-    <published>2018-09-10T04:38:12.000Z</published>
-    <updated>2018-12-16T08:04:36.797Z</updated>
-    
-    <content type="html"><![CDATA[<p>Android API适配</p><h3 id="1-Camera"><a href="#1-Camera" class="headerlink" title="1. Camera"></a>1. Camera</h3><ol><li>使用Camera2的时候, 清单配置文件需要增加允许手机开启硬件加速考虑到现有国内厂家对Camera2的支持度一般,不建议在实际开发项目中使用此API,略坑</li></ol><h3 id="2-Design"><a href="#2-Design" class="headerlink" title="2. Design"></a>2. Design</h3>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Android API适配&lt;/p&gt;
-&lt;h3 id=&quot;1-Camera&quot;&gt;&lt;a href=&quot;#1-Camera&quot; class=&quot;headerlink&quot; title=&quot;1. Camera&quot;&gt;&lt;/a&gt;1. Camera&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;使用Camera2的时候, 清单配
-      
-    
-    </summary>
-    
-      <category term="Android" scheme="http://litchiny.github.io/categories/Android/"/>
-    
-    
-      <category term="API适配" scheme="http://litchiny.github.io/tags/API%E9%80%82%E9%85%8D/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Android机型Bug</title>
     <link href="http://litchiny.github.io/2018/07/30/Android%E6%9C%BA%E5%9E%8Bbug/"/>
     <id>http://litchiny.github.io/2018/07/30/Android机型bug/</id>
